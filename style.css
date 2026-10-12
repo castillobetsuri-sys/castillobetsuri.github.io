@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eef7f8;
+    color: #263238;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    background-color: #176b87;
+    color: white;
+    padding: 18px 7% 35px;
+}
+
+nav {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #1f727b;
+}
+
+.menu a {
+    color: rgb(14, 59, 164);
+    text-decoration: none;
+    padding: 7px 11px;
+    margin: 3px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+
+.hero-contenido {
+    max-width: 1050px;
+    margin: 45px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-texto {
+    max-width: 570px;
+}
+
+.etiqueta {
+    color: #e85d75;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.hero .etiqueta {
+    color: #bcecf1;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.05;
+    margin-bottom: 15px;
+}
+
+.hero h1 span,
+.titulo-pagina h1 span,
+.video-seccion h2 span,
+.mensaje-final h2 span {
+    color: #e85d75;
+}
+
+.hero-texto > p:not(.etiqueta) {
+    max-width: 520px;
+    margin-bottom: 22px;
+}
+
+.boton {
+    background-color: #e85d75;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.figura {
+    width: 230px;
+    height: 250px;
+    background-color: #e4f5f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.figura img {
+    width: 170px;
+    height: 190px;
+    object-fit: contain;
+}
+
+main,
+.pagina {
+    width: 86%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+.introduccion {
+    background-color: white;
+    padding: 28px;
+    border-left: 6px solid #49a7b8;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 25px;
+    box-shadow: 0 3px 10px #d7e8ea;
+}
+
+.numero {
+    color: #e85d75;
+    font-weight: bold;
+}
+
+.introduccion h2 {
+    color: #176b87;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.texto p {
+    margin-bottom: 12px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.tarjetas article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-top: 4px solid #49a7b8;
+    box-shadow: 0 3px 8px #d7e8ea;
+}
+
+.tarjetas article:hover {
+    border-top-color: #e85d75;
+}
+
+.tarjetas article > span,
+.organo > div > span {
+    color: #e85d75;
+    font-weight: bold;
+}
+
+.tarjetas h3 {
+    color: #176b87;
+    margin: 8px 0;
+}
+
+.tarjetas a {
+    color: #e85d75;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.titulo-pagina {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 6px solid #49a7b8;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px #d7e8ea;
+}
+
+.titulo-pagina h1 {
+    color: #176b87;
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.anatomia-grid,
+.cuidados-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.bloque,
+.cuidados-grid article {
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    border-bottom: 4px solid #49a7b8;
+    box-shadow: 0 3px 8px #d7e8ea;
+}
+
+.icono,
+.numero-cuidado,
+.sistema-numero {
+    background-color: #e4f5f7;
+    color: #176b87;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.bloque h2,
+.cuidados-grid h2,
+.sistema h2,
+.organo h2 {
+    color: #176b87;
+    margin-bottom: 8px;
+}
+
+.dato {
+    background-color: #247ba0;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.dato h2 {
+    font-size: 45px;
+}
+
+.sistemas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.sistema {
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    display: flex;
+    gap: 18px;
+    border-left: 5px solid #49a7b8;
+    box-shadow: 0 3px 8px #d7e8ea;
+}
+
+.sistema-numero {
+    flex-shrink: 0;
+}
+
+.organos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.organo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 4px solid #49a7b8;
+    box-shadow: 0 3px 8px #d7e8ea;
+}
+
+.organo img {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.video-seccion {
+    background-color: white;
+    padding: 28px;
+    margin-top: 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px #d7e8ea;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 25px;
+    align-items: center;
+}
+
+.video-seccion h2 {
+    color: #176b87;
+    font-size: 28px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.video-seccion video {
+    width: 100%;
+    max-height: 420px;
+    border-radius: 10px;
+    background-color: #263238;
+}
+
+.mensaje-final {
+    background-color: #247ba0;
+    color: white;
+    padding: 30px;
+    margin-top: 28px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.mensaje-final .etiqueta {
+    color: #bcecf1;
+}
+
+.mensaje-final h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 45px;
+}
+
+footer h3 {
+    color: #bcecf1;
+    margin-bottom: 5px;
+}
+
